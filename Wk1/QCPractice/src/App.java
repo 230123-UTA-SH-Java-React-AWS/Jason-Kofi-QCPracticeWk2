@@ -1,8 +1,13 @@
 public class App {
     public static double getAverage(int[] nums) {
         //WRITE YOUR CODE HERE
+        double sum = 0;
+
+        for (int i=0; i<nums.length; i++){
+            sum += nums[i];
+        }
+
         return sum/nums.length;
-        //testing for github
     }
 
     //DO NOT TOUCH ANYTHING DOWN HERE
