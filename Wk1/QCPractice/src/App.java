@@ -1,6 +1,15 @@
 public class App {
     public static double getAverage(int[] nums) {
+        double sum = 0;
+        //Focus on adding everything inside of nums
+        for (int number : nums) {
+            sum += number;
+        }
+
+        double average = sum/nums.length; //expressions with division, make sure at least one value is not an int
+
         //WRITE YOUR CODE HERE
+<<<<<<< HEAD
         double sum = 0;
 
         for (int i=0; i<nums.length; i++){
@@ -8,6 +17,9 @@ public class App {
         }
 
         return sum/nums.length;
+=======
+        return average;
+>>>>>>> f12ac264679529d4ea01981067369d44a747ae04
     }
 
     //DO NOT TOUCH ANYTHING DOWN HERE
