@@ -2,6 +2,7 @@ public class App {
     public static double getAverage(int[] nums) {
         //WRITE YOUR CODE HERE
         return sum/nums.length;
+        //testing for github
     }
 
     //DO NOT TOUCH ANYTHING DOWN HERE
