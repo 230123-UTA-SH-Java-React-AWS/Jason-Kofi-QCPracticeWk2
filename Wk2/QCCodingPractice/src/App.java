@@ -20,7 +20,18 @@ public class App {
 
     public static boolean[] determineEveryOddorEven(int nums[])
     {
-        return new boolean[]{};
+        //we have to create an array of the same size or there will be an arratOutofBounds Exception
+        boolean[] result = new boolean[nums.length];
+        for (int i=0; i<nums.length; i++){
+            if (nums[i]%2 == 0){
+            //even
+            result[i] = true;
+        } else {
+        //odd
+        result[i] = false;
+    }
+        }
+        return result;
     }
 
     public static void main(String[] args) throws Exception {
